@@ -5,6 +5,7 @@ import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -18,6 +19,7 @@ import javax.swing.JTextField;
  * @author Gus-Gus
  */
 public class Ventana2 extends JFrame{
+    
     private JPanel jPanel1;
     private List<JLabel> jLabelList;
     private List<JTextField> jTextFieldList;
@@ -29,7 +31,7 @@ public class Ventana2 extends JFrame{
     
     public Ventana2(String title) throws HeadlessException {
         super(title);
-        this.setSize(800,800);
+        this.setSize(400,450);
         this.setLocation(400,10);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
@@ -55,15 +57,25 @@ public class Ventana2 extends JFrame{
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
+        
         this.jPanel1.add(this.jPanelList.get(0));
+        this.jPanelList.get(0).setLayout(new BoxLayout(this.jPanelList.get(0), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(1));
+        this.jPanelList.get(1).setLayout(new BoxLayout(this.jPanelList.get(1), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(2));
+        this.jPanelList.get(2).setLayout(new BoxLayout(this.jPanelList.get(2), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(3));
+        this.jPanelList.get(3).setLayout(new BoxLayout(this.jPanelList.get(3), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(4));
+        this.jPanelList.get(4).setLayout(new BoxLayout(this.jPanelList.get(4), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(5));
+        this.jPanelList.get(5).setLayout(new BoxLayout(this.jPanelList.get(5), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(6));
+        this.jPanelList.get(6).setLayout(new BoxLayout(this.jPanelList.get(6), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(7));
+        this.jPanelList.get(7).setLayout(new BoxLayout(this.jPanelList.get(7), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(8));
+        this.jPanelList.get(8).setLayout(new BoxLayout(this.jPanelList.get(8), BoxLayout.X_AXIS));
     }
     
     public void iniciarEtiquetas(){
@@ -86,11 +98,6 @@ public class Ventana2 extends JFrame{
         this.jLabelList.add(new JLabel("0998762741"));
         this.jLabelList.add(new JLabel("WhatsApp: "));
 
-        
-        
-        
-        
-        
         this.jPanelList.get(0).add(this.jLabelList.get(0));
         this.jPanelList.get(0).add(this.jLabelList.get(1));
         this.jPanelList.get(1).add(this.jLabelList.get(2));
