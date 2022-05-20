@@ -14,6 +14,8 @@ public class Principal {
        v2.setVisible(true);
        var v3 = new Ventana3("INFORMACION DE CARRERA");
        v3.setVisible(true);
+       var v4 = new Ventana4("VENTANA CREAR GRUPO");
+       v4.setVisible(true);
        var v5 = new Ventana5("VENTANA SEDE");
        v5.setVisible(true);
     }
